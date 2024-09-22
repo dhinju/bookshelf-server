@@ -3,7 +3,7 @@ const axios = require('axios');
 const { parse } = require('node-html-parser');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware to handle CORS for requests to the proxy server
 app.use((req, res, next) => {
